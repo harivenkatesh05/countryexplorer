@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Countries API</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://globalgarageflooring.com/wp-content/uploads/2018/07/favicon.png" type="image/x-icon"/>
+  <script type = "text/javascript">
+            function Redirect() {
+               window.location = "file:///C:/Users/Venkatesh%20ponusami/Desktop/web/Venki/index2.html";
+            }
+      </script>
+</head>
+<body bgcolor="#D3D3D3">
+  <!-- header section -->
+  <header class="header">
+    <div class="container">
+      <h1 style="font-family:calibri">Countries of the World</h1>
+    </div>
+  </header>
+  <!-- header section ends -->
+
+  <main>
+
+    <!-- input section -->
+    <section id="input__section" class="input__section">
+      <div class="container">
+        <!-- form for input countries -->
+        <form>
+          <label class="countryInput-label" for="input__countryInput">Enter a country name for info:</label>
+          <input type="text" id="input__countryInput" class="input__countryInput" placeholder="Country">
+		   <input type = "button" value = "Full Details" onclick = "Redirect();" />
+    
+    </form>
+      </div>
+    </section>
+    <!-- input section ends -->
+
+    <section id="country__section" class="country__section">
+      <div class="container">
+        <!-- output of country info -->
+        <div class="country-output">
+
+          <div class="country__output-suggestions" id="country__output-suggestions"></div>
+            <div class="country__buttons" id="country__buttons">
+            <button class="country-button country-info">Country</button>
+            <button class="country-button country-currency">Currency Exchange</button>
+          </div>
+
+          <!-- main country info output -->
+          <div id="country__output-main">
+
+            <!-- flex container for country info and map -->
+            <div class="country__output-flexContainer">
+
+              <!-- grid container for country info -->
+              <div class="country__info-GridContainer">
+                <p class="country__ouput-title">Country Name:</p>
+                <p class="country__ouput-js"><span class="country__output-name"></span></p>
+
+                <p class="country__ouput-title">Region:</p>
+                <p class="country__ouput-js"><span class="country__output-region"></span></p>
+
+                <p class="country__ouput-title">ISO Code:</p>
+                <p class="country__ouput-js"><span class="country__output-iso"></span></p>
+
+                <p class="country__ouput-title">Capital City:</p>
+                <p class="country__ouput-js"><span class="country__output-capital"></span></p>
+
+                <p class="country__ouput-title">Population:</p>
+                <p class="country__ouput-js"><span class="country__output-population"></span></p>
+
+                <p class="country__ouput-title">Currency:</p>
+                <p class="country__ouput-js"><span class="country__output-currency"></span></p>
+
+                <p class="country__ouput-title">Languages:</p>
+                <p class="country__ouput-js"><span class="country__output-languages"></span></p>
+
+                <p class="country__ouput-title">National Flag:</p>
+                <p class="country__ouput-js --flag"><span class="country__output-flag"></span></p>
+              </div>
+              <div class="country-output__mapImage"></div>
+            </div>
+          </div>
+
+          <!-- currey output -->
+          <div class="country-output-currency country-output-secondary" id="country-output-currency">
+            <div class="container">
+              <p class="country__ouput-title">Base Currency:
+              <span class="country__output-baseCurrency"></span></p>
+  
+              <div class="country__currency-GridContainer">
+                <p class="country__ouput-title">CAD:</p>
+                <p class="country__ouput-js"><span class="country__output-forexCAD"></span></p>
+  
+                <p class="country__ouput-title">USD:</p>
+                <p class="country__ouput-js"><span class="country__output-forexUSD"></span></p>
+  
+                <p class="country__ouput-title">GBP:</p>
+                <p class="country__ouput-js"><span class="country__output-forexGBP"></span></p>
+  
+                <p class="country__ouput-title">JPY:</p>
+                <p class="country__ouput-js"><span class="country__output-forexJPY"></span></p>
+              </div>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Freshworks</p>
+  </footer>
+  
+  <script src="country.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

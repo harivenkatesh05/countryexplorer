@@ -1,0 +1,232 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content:''; clear: both; height: 0;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+
+
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "handwriting", sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+
+.alert {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  width: 50%;
+  height: 5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* header styles */
+.header {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+
+  margin: 2rem 0;
+}
+/* header end */
+
+/* input section styles */
+.input__section {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+.butn {
+  background: #a8b5bd;
+  background-image: -webkit-linear-gradient(top, #a8b5bd, #586d7a);
+  background-image: -moz-linear-gradient(top, #a8b5bd, #586d7a);
+  background-image: -ms-linear-gradient(top, #a8b5bd, #586d7a);
+  background-image: -o-linear-gradient(top, #a8b5bd, #586d7a);
+  background-image: linear-gradient(to bottom, #a8b5bd, #586d7a);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: Georgia;
+  color: #f5f5f5;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.countryInput-label {
+  font-size: 1.1rem;
+  color: grey;
+} 
+
+.input__countryInput {
+  display: block;
+  width: 30%;
+  margin: 2rem auto;
+  border: none;
+  border-bottom: 0.1rem black solid;
+  text-align: center;
+  font-size: 1rem;
+
+}
+/* input section ends */
+
+/* output section */
+.country__section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.country-output {
+  padding: 2rem;
+}
+
+.country__buttons {
+  border-bottom: 0.1rem black solid;
+  width: 55%;
+  margin: 1rem auto 2rem;
+  display: none;
+}
+
+.country-button {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0.5rem 0;
+}
+
+.country-button:hover {
+  color: crimson;
+}
+
+#country__output-main {
+  display: none;
+}
+
+.country__output-suggestions {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.country-suggestion-button {
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.country-suggestion-button:hover {
+  color: red;
+}
+
+.country__output-flexContainer {
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.country__info-GridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0 auto;
+  width: 40%;
+}
+
+.country__ouput-title {
+  font-weight: 500;
+}
+
+.country__ouput-title, 
+.country__ouput-js {
+  margin: 1rem 0;
+}
+
+.country__output-flag-image {
+  max-height: 1.75rem;
+}
+
+.country-output__mapImage {
+  width: 50%;
+  height: 20rem;
+
+  margin: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.country-output__mapImage img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.country-output-currency {
+  font-size: 1rem;
+  display: none;
+}
+
+.country__currency-GridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 20%;
+  margin: 0 auto;
+}
+/* output section ends */
+
+footer {
+  text-align: center;
+  margin: 1rem;
+}
